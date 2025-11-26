@@ -1,17 +1,17 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/Rw6d9QFD)
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/oYnIPZ_t)
 | Name           | NRP        | Kelas     |
 | ---            | ---        | ----------|
-| ... | ... | ... |
+| Farrel Aqilla Novianto | 5025241015 | Jarkom C |
 
 
 
 ## Put your topology config image here!
 
-`Put image in here`
+<img width="1497" height="797" alt="image" src="https://github.com/user-attachments/assets/a13b22a1-eedd-4966-bb94-649941768b3e" />
 
 ## Put your GNS3 Project file here!
 
-`Put file URL here`
+[`Project and Config File`](https://drive.google.com/drive/folders/1FOmKinJx4m3HrW_-BP7ZbdZ_VHs9FzUR?usp=sharing)
 
 <br>
 
@@ -28,11 +28,14 @@ _Also include the subnet table and diagram in the lab report._
 
 - Screenshot
 
-  `Put your screenshot in here`
+<img width="1622" height="798" alt="A1" src="https://github.com/user-attachments/assets/6827f28f-75b4-4708-9d60-03a9346f35a1" />
+<img width="1032" height="309" alt="image" src="https://github.com/user-attachments/assets/cefe747c-0154-4fff-924c-616e2f6878b1" />
+<img width="1032" height="287" alt="image" src="https://github.com/user-attachments/assets/6a2623b0-4e9f-476c-a42e-01ee7f2e9d42" />
+<img width="1658" height="311" alt="image" src="https://github.com/user-attachments/assets/b9d67793-8238-487a-965c-c60436d83f98" />
 
 - Explanation
 
-  `Put your explanation in here`
+Saya menerapkan teknik subnetting Variable Length Subnet Mask (VLSM) pada blok supernet `10.171.0.0/22` untuk mengelola alokasi alamat IP secara efisien bagi total 654 host. Pembagian dilakukan secara hierarkis, dimulai dari subnet dengan kebutuhan host terbesar (descending) untuk mencegah tumpang tindih (overlapping) alamat. A6 (Subnet HR) sebagai segmen terbesar dialokasikan prefix /23 (510 usable IP), diikuti oleh A1 (Subnet IT) dengan prefix /25, serta segmen DB-Server (A2 dan A3) dan Web-Server (A4 dan A5) yang menggunakan variasi prefix /27 dan /28 sesuai beban layanan, antara server 1 dan 2 terpisah karena memiliki interface yang berbeda. Terakhir, subnet point-to-point antar router (A7, A8, A9, A10) dengan menggunakan prefix /30 yang membatasi alokasi hanya untuk 2 alamat IP per subnet.
 
 <br>
 
@@ -46,11 +49,11 @@ _Also include the subnet table and diagram in the lab report._
 
 - Screenshot
 
-  `Put your screenshot in here`
+<img width="720" height="206" alt="image" src="https://github.com/user-attachments/assets/edf9545d-83dc-4b8a-9f98-ceb4a350a0c3" />
 
 - Explanation
 
-  `Put your explanation in here`
+Untuk menghubungkan Router-2 ke internet, konfigurasi dilakukan dengan mengaktifkan DHCP Client pada interface `eth3` yang terhubung langsung ke NAT. Melalui mekanisme ini, router secara otomatis mendapatkan alokasi alamat IP dan jalur routing default tanpa perlu pengaturan manual. Bersamaan dengan itu, sistem secara otomatis menetapkan alamat `192.168.122.1` sebagai nameserver (DNS), yang merupakan alamat server penyedia layanan DHCP tersebut.
 
 <br>
 
@@ -66,11 +69,19 @@ _Ensure all existing nodes can access the internet._
 
 - Screenshot
 
-  `Put your screenshot in here`
+<img width="719" height="138" alt="image" src="https://github.com/user-attachments/assets/a9ee921b-7d9b-4b4c-8864-3361d11071ba" />
+<img width="719" height="134" alt="image" src="https://github.com/user-attachments/assets/b01b17d7-894a-4aaa-82a3-dc5fb3b51fad" />
+<img width="718" height="136" alt="image" src="https://github.com/user-attachments/assets/0fca8099-6d8b-45de-9033-59b7fae90888" />
+<img width="718" height="134" alt="image" src="https://github.com/user-attachments/assets/a8408437-a5eb-4f54-a98b-ba5151fafe84" />
+<img width="720" height="139" alt="image" src="https://github.com/user-attachments/assets/9b419adb-2eac-4e5b-a204-b4c04f8b5ea6" />
+<img width="719" height="137" alt="image" src="https://github.com/user-attachments/assets/774d57ea-e9a2-4ae3-96cf-c26d3f529400" />
+<img width="718" height="142" alt="image" src="https://github.com/user-attachments/assets/81c09d06-7050-48d5-8265-d493b0169289" />
+<img width="719" height="137" alt="image" src="https://github.com/user-attachments/assets/7d12f3de-a29d-4c0a-a584-2aa6c5b0628f" />
+<img width="719" height="140" alt="image" src="https://github.com/user-attachments/assets/8aaf474f-bbd3-4437-89fe-b1bb7e569eef" />
 
 - Explanation
 
-  `Put your explanation in here`
+Untuk membuat jembatan koneksi untuk seluruh subnet, diterapkan mekanisme dynamic routing menggunakan protokol RIP (Routing Information Protocol) yang dijalankan melalui aplikasi FRR (Free Range Routing). Dalam konfigurasi ini, setiap router diinstruksikan untuk mengaktifkan service RIP dan secara otomatis mengiklankan jaringan yang terhubung langsung dengannya ke router tetangga. Penggunaan FRR memungkinkan pengelolaan routing yang fleksibel, di mana protokol RIP akan menyebarkan informasi tabel routing ke seluruh topologi secara dinamis tanpa perlu pengaturan manual yang rumit. Hasilnya seluruh subnet jaringan dari subnet IT, DB-Server, Web-Server, HR, dan antar router. Kini dapat saling berkomunikasi (ping) karena setiap router telah mengenali jalur menuju semua subnet yang ada secara otomatis.
 
 <br>
 
@@ -86,11 +97,12 @@ _Configuration is free to practice, but note that it uses port 80._
 
 - Screenshot
 
-  `Put your screenshot in here`
+<img width="718" height="323" alt="image" src="https://github.com/user-attachments/assets/1ffd630b-3b44-4606-9a73-5b5c09aabb85" />
+<img width="719" height="325" alt="image" src="https://github.com/user-attachments/assets/9dd19368-92f4-4dc5-8d8f-fc3007ac7d57" />
 
 - Explanation
 
-  `Put your explanation in here`
+Implementasi layanan web dilakukan dengan menginstal `Nginx` pada `Web-Server-1` dan `Web-Server-2` sebagai webserver. File HTML yang disediakan dalam lampiran kemudian diunggah ke direktori root server (/var/www/ws1 atau ws2) dan diatur sebagai file indeks (index.html) agar dapat diakses secara otomatis. Dengan konfigurasi ini, kedua server dikondisikan untuk mendengarkan port 80 dan siap melayani permintaan HTTP dari klien. Keberhasilan setup diverifikasi melalui pengujian akses ke IP masing-masing server menggunakan `curl`, yang secara tidak langsung menampilkan konten halaman web sesuai dengan file yang telah dikonfigurasi.
 
 <br>
 
@@ -104,11 +116,12 @@ _Configuration is free to practice, but note that it uses port 80._
 
 - Screenshot
 
-  `Put your screenshot in here`
+<img width="717" height="103" alt="image" src="https://github.com/user-attachments/assets/ceaf9b6e-abe9-4382-b807-78e8a74104e4" />
+<img width="312" height="157" alt="image" src="https://github.com/user-attachments/assets/5c7b58b9-7039-4523-a78e-5a28dd87d7be" />
 
 - Explanation
 
-  `Put your explanation in here`
+Konfigurasi packet filtering diterapkan langsung pada `router-5` yang berfungsi sebagai gerbang utama subnet HR. Aturan iptables ditambahkan secara spesifik pada chain `FORWARD` untuk mencegat lalu lintas data yang melintas menuju blok IP `10.171.2.0/23`. Perintah ini secara tegas menginstruksikan router untuk membuang (DROP) setiap paket TCP yang menargetkan port `1337` dan `4444` tanpa mengirimkan notifikasi balik ke pengirim. Aturan ini divalidasi melalui pengujian menggunakan `netcat` (nc), di mana upaya koneksi ke kedua port tersebut mengalami kegagalan (tidak ada respons) dengan tanda `^C` yang berarti tidak paket yang berhasil lalu saya force stop, membuktikan bahwa firewall telah berhasil memblokir jalur komunikasi spesifik tersebut sesuai instruksi.
 
 <br>
 
@@ -122,11 +135,13 @@ _Configuration is free to practice, but note that it uses port 80._
 
 - Screenshot
 
-  `Put your screenshot in here`
+<img width="719" height="167" alt="image" src="https://github.com/user-attachments/assets/76653c8b-5e6f-43d5-b037-e4c9c53bd808" />
+<img width="302" height="86" alt="image" src="https://github.com/user-attachments/assets/8cb33c4c-4354-4c8f-be34-8f59114b5701" />
+<img width="336" height="89" alt="image" src="https://github.com/user-attachments/assets/a80f401e-458f-43d9-80df-6bde8c9a77d6" />
 
 - Explanation
 
-  `Put your explanation in here`
+Konfigurasi packet filtering diterapkan langsung pada `router-4` yang berfungsi sebagai gerbang utama subnet Web-Server. Aturan disusun menggunakan mekanisme whitelist, di mana koneksi SSH (port 22) secara eksplisit diizinkan (ACCEPT) hanya jika paket berasal dari subnet IT `10.171.1.128/25` menuju subnet Web Server. Aturan berikutnya berfungsi sebagai penutup (deny-all) yang akan membuang (DROP) paket dari sumber lain yang mencoba mengakses subnet tersebut. Konfigurasi ini menjamin bahwa hak akses Web-Server via SSH bersifat eksklusif bagi node di subnet IT, sementara upaya koneksi dari subnet lain akan ditolak sepenuhnya oleh router demi keamanan.
 
 <br>
 
@@ -140,11 +155,12 @@ _Configuration is free to practice, but note that it uses port 80._
 
 - Screenshot
 
-  `Put your screenshot in here`
+<img width="718" height="336" alt="image" src="https://github.com/user-attachments/assets/6d828c76-46e5-49ec-a560-de288bf46896" />
+<img width="313" height="125" alt="image" src="https://github.com/user-attachments/assets/3941d502-fbe0-4681-8dfb-c6d49e704f3c" />
 
 - Explanation
 
-  `Put your explanation in here`
+Konfigurasi packet filtering diterapkan langsung pada `router-3` yang berfungsi sebagai gerbang utama subnet DB-Server. Konfigurasi ini memanfaatkan modul time pada iptables untuk membuat jadwal spesifik, di mana lalu lintas TCP menuju port 80 dan 443 hanya diizinkan (ACCEPT) ke subnet DB-Server yaitu `10.171.1.17` dan `10.171.1.97` pada rentang waktu yang ditentukan, yaitu hari Senin hingga Sabtu pukul 07:00 s.d. 22:00. Mekanisme ini dilengkapi dengan aturan DROP di baris akhir yang berfungsi memblokir segala upaya koneksi ke port tersebut di luar waktu yang ditentukan (seperti malam hari diatas jam 10 malam atau hari Minggu), memastikan bahwa layanan database tertutup rapat dari akses eksternal saat tidak ada aktivitas.
 
 <br>
 
@@ -158,11 +174,12 @@ _Configuration is free to practice, but note that it uses port 80._
 
 - Screenshot
 
-  `Put your screenshot in here`
+<img width="719" height="135" alt="image" src="https://github.com/user-attachments/assets/ed809f84-e5ff-418f-928d-313b2a49cd7b" />
+<img width="303" height="122" alt="image" src="https://github.com/user-attachments/assets/6e11fa3a-1a30-46b1-80cf-f9379444dcac" />
 
 - Explanation
 
-  `Put your explanation in here`
+Konfigurasi packet filtering diterapkan langsung pada `router-4` yang berfungsi sebagai gerbang utama subnet Web-Server. Konfigurasi ini menggunakan whitelist, di mana aturan pertama secara eksplisit mengizinkan (ACCEPT) lalu lintas TCP port 80 (HTTP) menuju subnet Web-Server-1 dan Web-Server-2. Aturan tersebut kemudian dikunci dengan kebijakan menolak semua paket selain HTTP (DROP) untuk semua sisa paket yang menuju ke destinasi yang sama, sehingga secara efektif memblokir seluruh jenis lalu lintas lain (seperti UDP atau port TCP lainnya) dan memastikan server benar-benar terisolasi hanya untuk melayani permintaan web.
 
 <br>
 
@@ -176,11 +193,13 @@ _Configuration is free to practice, but note that it uses port 80._
 
 - Screenshot
 
-  `Put your screenshot in here`
+<img width="718" height="154" alt="image" src="https://github.com/user-attachments/assets/e8e48778-6e9e-4129-b805-af730aedc928" />
+<img width="717" height="193" alt="image" src="https://github.com/user-attachments/assets/f8f886fd-3738-40f6-a8f6-57d102303d63" />
+<img width="717" height="456" alt="image" src="https://github.com/user-attachments/assets/f6913246-c8e0-47a6-9185-e5cdb2123258" />
 
 - Explanation
 
-  `Put your explanation in here`
+Saya memilih subnet HR. Konfigurasi firewall pada Router-5 ditambahkan untuk memblokir permintaan ICMP (ping) dari pihak eksternal namun tetap bisa PING keluar subnet. Mekanisme ini menerapkan filter selektif, di mana aturan awal secara eksplisit mengizinkan paket ICMP keluar dari subnet HR `10.171.2.0/23` serta menerima kembali paket balasannya `echo-reply`. Setelah jalur diamankan, aturan berikutnya membuang (DROP) segala inisiasi paket ICMP baru yang berasal dari luar subnet.
 
 <br>
 
@@ -194,14 +213,15 @@ _Configuration is free to practice, but note that it uses port 80._
 
 - Screenshot
 
-  `Put your screenshot in here`
+<img width="718" height="460" alt="image" src="https://github.com/user-attachments/assets/75d6e17f-75ab-404d-b074-319e55deefb5" />
 
 - Explanation
 
-  `Put your explanation in here`
+Mekanisme logging diimplementasikan dengan membuat custom chain baru bernama LOGDROP. Chain ini dirancang untuk menjalankan dua aksi berurutan, pertama, mencatat log, dan kedua, mengeksekusi aksi pembuangan (DROP) paket tersebut. Konfigurasi logging ini divalidasi menggunakan perintah iptables -nvL, yang menampilkan struktur aturan beserta penghitung paket (packet counters) untuk memastikan bahwa setiap upaya intrusi tidak hanya digagalkan, tetapi juga terekam secara sistematis dalam log sistem.
 
 <br>
   
 ## Problems
+Kesusahan mencari cara untuk membuat file .log sendiri, jadi saya memutuskan melihat log menggunakan syntax `iptables -nvL`
 
 ## Revisions (if any)
