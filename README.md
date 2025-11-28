@@ -7,7 +7,7 @@
 
 ## Put your topology config image here!
 
-<img width="1497" height="797" alt="image" src="https://github.com/user-attachments/assets/a13b22a1-eedd-4966-bb94-649941768b3e" />
+![Alt text](img/topology.png)
 
 ## Put your GNS3 Project file here!
 
@@ -28,10 +28,10 @@ _Also include the subnet table and diagram in the lab report._
 
 - Screenshot
 
-<img width="1622" height="798" alt="A1" src="https://github.com/user-attachments/assets/6827f28f-75b4-4708-9d60-03a9346f35a1" />
-<img width="1032" height="309" alt="image" src="https://github.com/user-attachments/assets/cefe747c-0154-4fff-924c-616e2f6878b1" />
-<img width="1032" height="287" alt="image" src="https://github.com/user-attachments/assets/6a2623b0-4e9f-476c-a42e-01ee7f2e9d42" />
-<img width="1658" height="311" alt="image" src="https://github.com/user-attachments/assets/b9d67793-8238-487a-965c-c60436d83f98" />
+![Alt text](img/1a.png)
+![Alt text](img/1b.png)
+![Alt text](img/1c.png)
+![Alt text](img/1d.png)
 
 - Explanation
 
@@ -49,7 +49,7 @@ Saya menerapkan teknik subnetting Variable Length Subnet Mask (VLSM) pada blok s
 
 - Screenshot
 
-<img width="720" height="206" alt="image" src="https://github.com/user-attachments/assets/edf9545d-83dc-4b8a-9f98-ceb4a350a0c3" />
+![Alt text](img/2.png)
 
 - Explanation
 
@@ -69,15 +69,15 @@ _Ensure all existing nodes can access the internet._
 
 - Screenshot
 
-<img width="719" height="138" alt="image" src="https://github.com/user-attachments/assets/a9ee921b-7d9b-4b4c-8864-3361d11071ba" />
-<img width="719" height="134" alt="image" src="https://github.com/user-attachments/assets/b01b17d7-894a-4aaa-82a3-dc5fb3b51fad" />
-<img width="718" height="136" alt="image" src="https://github.com/user-attachments/assets/0fca8099-6d8b-45de-9033-59b7fae90888" />
-<img width="718" height="134" alt="image" src="https://github.com/user-attachments/assets/a8408437-a5eb-4f54-a98b-ba5151fafe84" />
-<img width="720" height="139" alt="image" src="https://github.com/user-attachments/assets/9b419adb-2eac-4e5b-a204-b4c04f8b5ea6" />
-<img width="719" height="137" alt="image" src="https://github.com/user-attachments/assets/774d57ea-e9a2-4ae3-96cf-c26d3f529400" />
-<img width="718" height="142" alt="image" src="https://github.com/user-attachments/assets/81c09d06-7050-48d5-8265-d493b0169289" />
-<img width="719" height="137" alt="image" src="https://github.com/user-attachments/assets/7d12f3de-a29d-4c0a-a584-2aa6c5b0628f" />
-<img width="719" height="140" alt="image" src="https://github.com/user-attachments/assets/8aaf474f-bbd3-4437-89fe-b1bb7e569eef" />
+![Alt text](img/3a.png)
+![Alt text](img/3b.png)
+![Alt text](img/3c.png)
+![Alt text](img/3d.png)
+![Alt text](img/3e.png)
+![Alt text](img/3f.png)
+![Alt text](img/3g.png)
+![Alt text](img/3h.png)
+![Alt text](img/3i.png)
 
 - Explanation
 
@@ -97,8 +97,8 @@ _Configuration is free to practice, but note that it uses port 80._
 
 - Screenshot
 
-<img width="718" height="323" alt="image" src="https://github.com/user-attachments/assets/1ffd630b-3b44-4606-9a73-5b5c09aabb85" />
-<img width="719" height="325" alt="image" src="https://github.com/user-attachments/assets/9dd19368-92f4-4dc5-8d8f-fc3007ac7d57" />
+![Alt text](img/4a.png)
+![Alt text](img/4b.png)
 
 - Explanation
 
@@ -116,8 +116,8 @@ Implementasi layanan web dilakukan dengan menginstal `Nginx` pada `Web-Server-1`
 
 - Screenshot
 
-<img width="717" height="103" alt="image" src="https://github.com/user-attachments/assets/ceaf9b6e-abe9-4382-b807-78e8a74104e4" />
-<img width="312" height="157" alt="image" src="https://github.com/user-attachments/assets/5c7b58b9-7039-4523-a78e-5a28dd87d7be" />
+![Alt text](img/5a.png)
+![Alt text](img/5b.png)
 
 - Explanation
 
@@ -135,9 +135,9 @@ Konfigurasi packet filtering diterapkan langsung pada `router-5` yang berfungsi 
 
 - Screenshot
 
-<img width="719" height="167" alt="image" src="https://github.com/user-attachments/assets/76653c8b-5e6f-43d5-b037-e4c9c53bd808" />
-<img width="302" height="86" alt="image" src="https://github.com/user-attachments/assets/8cb33c4c-4354-4c8f-be34-8f59114b5701" />
-<img width="336" height="89" alt="image" src="https://github.com/user-attachments/assets/a80f401e-458f-43d9-80df-6bde8c9a77d6" />
+![Alt text](img/6a.png)
+![Alt text](img/6b.png)
+![Alt text](img/6c.png)
 
 - Explanation
 
@@ -155,8 +155,8 @@ Konfigurasi packet filtering diterapkan langsung pada `router-4` yang berfungsi 
 
 - Screenshot
 
-<img width="718" height="336" alt="image" src="https://github.com/user-attachments/assets/6d828c76-46e5-49ec-a560-de288bf46896" />
-<img width="313" height="125" alt="image" src="https://github.com/user-attachments/assets/3941d502-fbe0-4681-8dfb-c6d49e704f3c" />
+![Alt text](img/7a.png)
+![Alt text](img/7b.png)
 
 - Explanation
 
@@ -174,8 +174,8 @@ Konfigurasi packet filtering diterapkan langsung pada `router-3` yang berfungsi 
 
 - Screenshot
 
-<img width="719" height="135" alt="image" src="https://github.com/user-attachments/assets/ed809f84-e5ff-418f-928d-313b2a49cd7b" />
-<img width="303" height="122" alt="image" src="https://github.com/user-attachments/assets/6e11fa3a-1a30-46b1-80cf-f9379444dcac" />
+![Alt text](img/8a.png)
+![Alt text](img/8b.png)
 
 - Explanation
 
@@ -193,9 +193,9 @@ Konfigurasi packet filtering diterapkan langsung pada `router-4` yang berfungsi 
 
 - Screenshot
 
-<img width="718" height="154" alt="image" src="https://github.com/user-attachments/assets/e8e48778-6e9e-4129-b805-af730aedc928" />
-<img width="717" height="193" alt="image" src="https://github.com/user-attachments/assets/f8f886fd-3738-40f6-a8f6-57d102303d63" />
-<img width="717" height="456" alt="image" src="https://github.com/user-attachments/assets/f6913246-c8e0-47a6-9185-e5cdb2123258" />
+![Alt text](img/9a.png)
+![Alt text](img/9b.png)
+![Alt text](img/9c.png)
 
 - Explanation
 
@@ -213,7 +213,12 @@ Saya memilih subnet HR. Konfigurasi firewall pada Router-5 ditambahkan untuk mem
 
 - Screenshot
 
-<img width="718" height="460" alt="image" src="https://github.com/user-attachments/assets/75d6e17f-75ab-404d-b074-319e55deefb5" />
+![Alt text](img/10a.png)
+![Alt text](img/10b.png)
+![Alt text](img/10c.png)
+![Alt text](img/10d.png)
+![Alt text](img/10e.png)
+![Alt text](img/10f.png)
 
 - Explanation
 
@@ -225,3 +230,4 @@ Mekanisme logging diimplementasikan dengan membuat custom chain baru bernama LOG
 Kesusahan mencari cara untuk membuat file .log sendiri, jadi saya memutuskan melihat log menggunakan syntax `iptables -nvL`
 
 ## Revisions (if any)
+Menambahkan mekanisme logging menggunakan `ulogd2`
